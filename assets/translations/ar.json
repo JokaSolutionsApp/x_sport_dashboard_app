@@ -1,0 +1,21 @@
+{
+    "welcome_back": "مرحبا بعودتك",
+    "welcome": "اهلا بك, {}",
+    "hello": "مرحباا",
+    "email_or_phone_number": "البريد الالكتروني او رقم الهاتف",
+    "password": "كلمة المرور",
+    "confirm_password": "تاكيد كلمة المرور",
+    "signin": "تسجيل دخول",
+    "signup": "انشاء حساب",
+    "signin_with": "تسجيل دخول عبر {}",
+    "signup_with": "انشاء حساب عبر {}",
+    "dont_have_an_account": "ليس لديك حساب؟! ",
+    "create_your_account_now": "انشئ حسابك الان",
+    "join_xsports": "انضم الى X Sports",
+    "account_confirmation": "تاكيد الحساب",
+    "code": "الرمز",
+    "check_your_email_inbox": "*تحقق من صندوق رسائل بريدك الالكتروني, ",
+    "send_again": "اطلب مرة اخرى",
+    "we_put_everything_in_one_place_for_you": "نضع لك كل شيء في مكان واحد",
+    "create_new_property": "انشئ ملكية جديدة"
+}
