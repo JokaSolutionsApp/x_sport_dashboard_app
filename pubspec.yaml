@@ -82,7 +82,11 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/authentication/
+    - assets/images/splash/
+    - assets/images/home/
     - assets/icons/
+    - assets/translations/
 
   fonts:
     # - family: AppIcons
