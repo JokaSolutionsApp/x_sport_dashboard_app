@@ -1,0 +1,20 @@
+{
+    "welcome_back": "Welcome Back",
+    "welcome": "Welcome {}",
+    "hello": "Hello",
+    "email_or_phone_number": "Email or phone number",
+    "password": "Password",
+    "confirm_password": "Confirm password",
+    "signin": "Sign in",
+    "signup": "Sign up",
+    "signin_with": "Sign in with {}",
+    "signup_with": "Sign up with {}",
+    "dont_have_an_account": "Don't have an accoun?! ",
+    "create_your_account_now": "create your account now",
+    "join_xsports": "Join X Sports",
+    "account_confirmation": "Confirm Account",
+    "check_your_email_inbox": "Check your Email inbox ",
+    "send_again": "Send again",
+    "we_put_everything_in_one_place_for_you": "We put everything in one place for you",
+    "create_new_property": "Create new property"
+}
