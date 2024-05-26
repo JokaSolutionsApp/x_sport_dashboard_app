@@ -29,7 +29,11 @@ class PersonalProfileScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  personalProfileHeader(),
+                  personalProfileHeader(
+                    context: context,
+                    propertyName: 'Property name',
+                    propertyType: 'Football court',
+                  ),
                   verticalSpace(20),
                   personalProfileViewAs(context),
                   verticalSpace(20),
@@ -101,7 +105,11 @@ class PersonalProfileScreen extends StatelessWidget {
     );
   }
 
-  Row personalProfileHeader() {
+  Row personalProfileHeader({
+    required BuildContext context,
+    required String propertyName,
+    required String propertyType,
+  }) {
     return Row(
       children: [
         CircleAvatar(
@@ -135,7 +143,7 @@ class PersonalProfileScreen extends StatelessWidget {
             Row(
               children: [
                 Text(
-                  'اسم الملكية',
+                  context.tr(propertyName),
                   style: TextStyles.primaryTextBold20,
                 ),
                 horizontalSpace(6),
@@ -146,7 +154,7 @@ class PersonalProfileScreen extends StatelessWidget {
               ],
             ),
             Text(
-              'ملعب كرة قدم',
+              context.tr(propertyType),
               style: TextStyles.secondaryTextBold16,
             ),
           ],

@@ -31,6 +31,7 @@ class AmenityCard extends StatelessWidget {
             verticalSpace(20),
             Text(
               context.tr(text),
+              textAlign: TextAlign.center,
             ),
           ],
         ),

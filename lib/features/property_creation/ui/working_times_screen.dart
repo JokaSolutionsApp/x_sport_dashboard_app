@@ -1,10 +1,13 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:x_sport_dashboard_app/core/helpers/extensions.dart';
 import 'package:x_sport_dashboard_app/core/helpers/keyboard_dismiss_ontap.dart';
 import 'package:x_sport_dashboard_app/core/helpers/spacing.dart';
+import 'package:x_sport_dashboard_app/core/routing/routes.dart';
 import 'package:x_sport_dashboard_app/core/utils/constants/colors.dart';
 import 'package:x_sport_dashboard_app/core/utils/constants/styles.dart';
+import 'package:x_sport_dashboard_app/core/widgets/app_text_button.dart';
 import 'package:x_sport_dashboard_app/core/widgets/app_text_form_field.dart';
 import 'package:x_sport_dashboard_app/core/widgets/logo_translation_header.dart';
 import 'package:x_sport_dashboard_app/features/property_creation/ui/widgets/step_text.dart';
@@ -40,12 +43,29 @@ class WorkingTimesScreen extends StatelessWidget {
                   buildTimeRow(context: context, dayName: 'Thursday'),
                   verticalSpace(40),
                   buildTimeRow(context: context, dayName: 'Friday'),
+                  buildButton(context),
                 ],
               ),
             ),
           ),
         ),
       ),
+    );
+  }
+
+  Column buildButton(BuildContext context) {
+    return Column(
+      children: [
+        verticalSpace(20),
+        AppTextButton(
+          text: 'next',
+          textStyle: TextStyles.whiteRegular20,
+          onPressed: () => context.pushNamed(
+            Routes.paymentMethodScreen,
+          ),
+        ),
+        verticalSpace(25),
+      ],
     );
   }
 

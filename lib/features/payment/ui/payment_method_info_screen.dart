@@ -54,8 +54,9 @@ class PaymentMethodInfoScreen extends StatelessWidget {
                 AppTextButton(
                   text: 'next',
                   textStyle: TextStyles.whiteRegular20,
-                  onPressed: () => context.pushNamed(
+                  onPressed: () => context.pushNamedAndRemoveUntil(
                     Routes.navigationScreen,
+                    predicate: (route) => false,
                   ),
                 ),
                 verticalSpace(20),
