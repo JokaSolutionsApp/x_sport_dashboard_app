@@ -35,6 +35,7 @@ class XSportsDashboardApp extends StatelessWidget {
         theme: ThemeData(
           appBarTheme: const AppBarTheme(
             color: ColorsManager.scaffoldBackground,
+            centerTitle: true,
           ),
           primaryColor: ColorsManager.primary,
           scaffoldBackgroundColor: ColorsManager.scaffoldBackground,

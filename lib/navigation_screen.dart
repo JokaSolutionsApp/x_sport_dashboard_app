@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:x_sport_dashboard_app/core/utils/constants/colors.dart';
+import 'package:x_sport_dashboard_app/features/menu/ui/menu_screen.dart';
 import 'package:x_sport_dashboard_app/features/personal_profile/ui/personal_profile_screen.dart';
 import 'package:x_sport_dashboard_app/features/schedule/ui/schedule_screen.dart';
 
@@ -53,8 +54,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
     ),
     const NavigationItem(
       icon: Icons.menu,
-      title: 'menu',
-      content: Center(child: Text('Menu')),
+      title: 'Menu',
+      content: MenuScreen(),
     ),
   ];
 

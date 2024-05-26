@@ -101,6 +101,11 @@ class TextStyles {
     fontWeight: FontWeightManager.bold,
     color: ColorsManager.primaryText,
   );
+  static TextStyle secondaryTextRegular16 = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeightManager.regular,
+    color: ColorsManager.secondaryText,
+  );
   static TextStyle secondaryTextBold16 = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeightManager.bold,

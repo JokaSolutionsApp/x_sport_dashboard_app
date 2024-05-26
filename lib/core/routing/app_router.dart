@@ -7,6 +7,7 @@ import 'package:x_sport_dashboard_app/features/authentication/logic/cubit/signup
 import 'package:x_sport_dashboard_app/features/authentication/ui/account_confirmation_screen.dart';
 import 'package:x_sport_dashboard_app/features/authentication/ui/signin_screen.dart';
 import 'package:x_sport_dashboard_app/features/authentication/ui/signup_screen.dart';
+import 'package:x_sport_dashboard_app/features/menu/ui/menu_screen.dart';
 import 'package:x_sport_dashboard_app/features/offline_reservation/ui/choose_offline_reservation_type_screen.dart';
 import 'package:x_sport_dashboard_app/features/offline_reservation/ui/choose_offline_reservation_user_type_screen.dart';
 import 'package:x_sport_dashboard_app/features/offline_reservation/ui/offline_reservation_screen.dart';
@@ -149,6 +150,10 @@ class AppRouter {
       case Routes.personalProfileScreen:
         return MaterialPageRoute(
           builder: (_) => const PersonalProfileScreen(),
+        );
+      case Routes.menuScreen:
+        return MaterialPageRoute(
+          builder: (_) => const MenuScreen(),
         );
       default:
         return MaterialPageRoute(

@@ -30,4 +30,5 @@ class Routes {
   static const String offlineReservationScreen = '/offlineReservationScreen';
   static const String navigationScreen = '/navigationScreen';
   static const String personalProfileScreen = '/personalProfileScreen';
+  static const String menuScreen = '/menuScreen';
 }
