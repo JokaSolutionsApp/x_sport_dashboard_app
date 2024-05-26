@@ -3,7 +3,7 @@
     "welcome": "Welcome {}",
     "hello": "Hello",
     "email_or_phone_number": "Email or phone number",
-    "password": "Password",
+    "Password": "Password",
     "confirm_password": "Confirm password",
     "signin": "Sign in",
     "signup": "Sign up",
@@ -94,7 +94,7 @@
     "reservation_for_no_account_user": "Reservation for no account user",
     "user_info_will_be_entered_manually": "User info will be entered manually",
     "reservartion_name": "Reservartion name",
-    "phone_number": "Phone number",
+    "Phone number": "Phone number",
     "game": "Game",
     "reservation_start": "Reservation start",
     "reservation_end": "Reservation end",
@@ -107,5 +107,9 @@
     "Personal profile": "Personal profile",
     "reports": "Reports",
     "partnership_ads": "Partnership ads",
-    "menu": "Menu"
+    "menu": "Menu",
+    "Property information": "Property information",
+    "Location": "Location",
+    "E-mail": "E-mail",
+    "View as user": "View as user"
 }

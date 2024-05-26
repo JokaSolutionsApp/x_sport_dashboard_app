@@ -8,6 +8,7 @@ import 'package:x_sport_dashboard_app/core/routing/routes.dart';
 import 'package:x_sport_dashboard_app/core/utils/assets_managers/assets.gen.dart';
 import 'package:x_sport_dashboard_app/core/utils/constants/colors.dart';
 import 'package:x_sport_dashboard_app/core/utils/constants/styles.dart';
+import 'package:x_sport_dashboard_app/core/widgets/app_divider.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -62,7 +63,10 @@ class HomeScreen extends StatelessWidget {
                         color: ColorsManager.white,
                       ),
                     ),
-                    const Divider(),
+                    const AppDivider(
+                      indent: 0,
+                      endIndent: 0,
+                    )
                   ],
                 ),
               ),

@@ -35,7 +35,7 @@ class OfflineReservationScreen extends StatelessWidget {
                 ),
                 verticalSpace(30),
                 const AppTextFormField(
-                  hintText: 'phone_number',
+                  hintText: 'Phone number',
                 ),
                 verticalSpace(30),
                 const AppDropdownButtonFormField(

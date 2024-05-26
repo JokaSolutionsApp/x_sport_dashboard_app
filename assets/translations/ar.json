@@ -3,7 +3,7 @@
     "welcome": "اهلا بك, {}",
     "hello": "مرحباا",
     "email_or_phone_number": "البريد الالكتروني او رقم الهاتف",
-    "password": "كلمة المرور",
+    "Password": "كلمة المرور",
     "confirm_password": "تاكيد كلمة المرور",
     "signin": "تسجيل دخول",
     "signup": "انشاء حساب",
@@ -95,7 +95,7 @@
     "reservation_for_no_account_user": "حجز لمستخدم لايملك حساب",
     "user_info_will_be_entered_manually": "سيتم ادخال بيانات المستخدم يدوياََ",
     "reservartion_name": "اسم الحجز",
-    "phone_number": "رقم الموبايل",
+    "Phone number": "رقم الموبايل",
     "game": "اللعبة",
     "reservation_start": "بداية الحجز",
     "reservation_end": "نهاية الحجز",
@@ -109,5 +109,9 @@
     "Personal profile": "الملف الشخصي",
     "reports": "التقارير",
     "partnership_ads": "اعلانات الشراكة",
-    "menu": "القائمة"
+    "menu": "القائمة",
+    "Property information": "معلومات الملكية",
+    "Location": "الموقع الجغرافي",
+    "E-mail": "البريد الالكتروني",
+    "View as user": "عرض كما يظهر للمستخدمين"
 }

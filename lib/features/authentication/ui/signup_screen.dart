@@ -6,6 +6,7 @@ import 'package:x_sport_dashboard_app/core/helpers/keyboard_dismiss_ontap.dart';
 import 'package:x_sport_dashboard_app/core/helpers/spacing.dart';
 import 'package:x_sport_dashboard_app/core/utils/assets_managers/assets.gen.dart';
 import 'package:x_sport_dashboard_app/core/utils/constants/styles.dart';
+import 'package:x_sport_dashboard_app/core/widgets/app_divider.dart';
 import 'package:x_sport_dashboard_app/core/widgets/app_outlined_button.dart';
 import 'package:x_sport_dashboard_app/core/widgets/app_text_button.dart';
 import 'package:x_sport_dashboard_app/core/widgets/logo_translation_header.dart';
@@ -41,10 +42,7 @@ class SignupScreen extends StatelessWidget {
                     onPressed: () => validateThenSignup(context),
                   ),
                   verticalSpace(21),
-                  Divider(
-                    indent: 75.w,
-                    endIndent: 75.w,
-                  ),
+                  const AppDivider(),
                   verticalSpace(21),
                   AppOutlinedButton(
                     text: 'signup_with',

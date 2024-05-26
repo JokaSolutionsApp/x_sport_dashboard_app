@@ -25,6 +25,11 @@ class TextStyles {
     fontWeight: FontWeightManager.light,
     color: ColorsManager.primaryText,
   );
+  static TextStyle primaryTextRegular12 = TextStyle(
+    fontSize: 12.sp,
+    fontWeight: FontWeightManager.regular,
+    color: ColorsManager.primaryText,
+  );
   static TextStyle primaryRegular12 = TextStyle(
     fontSize: 12.sp,
     fontWeight: FontWeightManager.regular,
@@ -65,6 +70,11 @@ class TextStyles {
     fontWeight: FontWeightManager.regular,
     color: ColorsManager.secondaryText,
   );
+  static TextStyle primaryRegular14 = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeightManager.regular,
+    color: ColorsManager.primary,
+  );
   static TextStyle whiteRegular14 = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeightManager.regular,
@@ -90,6 +100,11 @@ class TextStyles {
     fontSize: 16.sp,
     fontWeight: FontWeightManager.bold,
     color: ColorsManager.primaryText,
+  );
+  static TextStyle secondaryTextBold16 = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeightManager.bold,
+    color: ColorsManager.secondaryText,
   );
   static TextStyle primaryTextLight18 = TextStyle(
     fontSize: 18.sp,

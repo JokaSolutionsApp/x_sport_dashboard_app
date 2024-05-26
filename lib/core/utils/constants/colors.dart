@@ -19,6 +19,9 @@ class ColorsManager {
 
   // Gradient
 
+  // Shadows
+  static const Color shadow = Color(0x0000001A);
+
   // Text
   static const Color primaryText = Color(0xFF2E2E2E);
   static const Color secondaryText = Color(0xFF9C9C9C);
@@ -33,6 +36,7 @@ class ColorsManager {
 
   // Border
   static const Color fieldBorder = Color(0xFFB0B0B0);
+  static const Color divider = Color(0xFFB2B2B2);
 
   // Toggles
   static const Color toggleOff = Color(0xFFD9D9D9);

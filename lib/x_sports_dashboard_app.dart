@@ -33,6 +33,9 @@ class XSportsDashboardApp extends StatelessWidget {
         locale: context.locale,
         title: 'X Sports Dahsboard App',
         theme: ThemeData(
+          appBarTheme: const AppBarTheme(
+            color: ColorsManager.scaffoldBackground,
+          ),
           primaryColor: ColorsManager.primary,
           scaffoldBackgroundColor: ColorsManager.scaffoldBackground,
           colorScheme: ColorScheme.fromSeed(
@@ -87,8 +90,8 @@ class XSportsDashboardApp extends StatelessWidget {
         // themeMode: ThemeMode.dark,
 
         debugShowCheckedModeBanner: false,
-        initialRoute: Routes.signinScreen,
-        // initialRoute: Routes.navigationScreen,
+        // initialRoute: Routes.signinScreen,
+        initialRoute: Routes.navigationScreen,
         onGenerateRoute: appRouter.generateRoute,
       ),
     );

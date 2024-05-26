@@ -6,6 +6,7 @@ import 'package:x_sport_dashboard_app/core/helpers/extensions.dart';
 import 'package:x_sport_dashboard_app/core/helpers/spacing.dart';
 import 'package:x_sport_dashboard_app/core/utils/constants/colors.dart';
 import 'package:x_sport_dashboard_app/core/utils/constants/styles.dart';
+import 'package:x_sport_dashboard_app/core/widgets/app_divider.dart';
 import 'package:x_sport_dashboard_app/core/widgets/app_icon_button.dart';
 import 'package:x_sport_dashboard_app/core/widgets/app_text_button.dart';
 
@@ -64,7 +65,7 @@ class NewFloor extends StatelessWidget {
                   ),
                   Transform.translate(
                     offset: const Offset(0, -18),
-                    child: Divider(
+                    child: AppDivider(
                       indent: 18.w,
                       endIndent: 24.w,
                     ),
@@ -87,7 +88,7 @@ class NewFloor extends StatelessWidget {
                   ),
                   Transform.translate(
                     offset: const Offset(0, -18),
-                    child: Divider(
+                    child: AppDivider(
                       indent: 18.w,
                       endIndent: 24.w,
                     ),
@@ -116,7 +117,10 @@ class NewFloor extends StatelessWidget {
             ),
           ),
         ),
-        const Divider(),
+        const AppDivider(
+          indent: 0,
+          endIndent: 0,
+        ),
       ],
     );
   }

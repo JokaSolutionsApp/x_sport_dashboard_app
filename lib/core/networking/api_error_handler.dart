@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:dio/dio.dart';
 
 import 'api_constants.dart';
@@ -161,8 +163,6 @@ ApiErrorModel _handleError(DioException error) {
     case DioExceptionType.connectionError:
       return DataSource.DEFAULT.getFailure();
     case DioExceptionType.badCertificate:
-      return DataSource.DEFAULT.getFailure();
-    case DioExceptionType.badResponse:
       return DataSource.DEFAULT.getFailure();
   }
 }
