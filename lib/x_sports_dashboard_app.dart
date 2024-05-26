@@ -91,8 +91,8 @@ class XSportsDashboardApp extends StatelessWidget {
         // themeMode: ThemeMode.dark,
 
         debugShowCheckedModeBanner: false,
-        // initialRoute: Routes.signinScreen,
-        initialRoute: Routes.navigationScreen,
+        initialRoute: Routes.signinScreen,
+        // initialRoute: Routes.navigationScreen,
         onGenerateRoute: appRouter.generateRoute,
       ),
     );
