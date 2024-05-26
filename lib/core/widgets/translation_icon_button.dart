@@ -11,7 +11,7 @@ class TranslationIconButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      borderRadius: BorderRadius.circular(100),
+      borderRadius: BorderRadius.circular(100.r),
       onTap: () => context.locale == const Locale('ar')
           ? context.setLocale(
               const Locale(

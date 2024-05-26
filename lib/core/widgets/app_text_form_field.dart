@@ -1,7 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:x_sport_dashboard_app/core/theming/colors.dart';
-import 'package:x_sport_dashboard_app/core/theming/styles.dart';
+import 'package:flutter/services.dart';
+import 'package:x_sport_dashboard_app/core/utils/constants/colors.dart';
+import 'package:x_sport_dashboard_app/core/utils/constants/styles.dart';
 
 class AppTextFormField extends StatelessWidget {
   final String? hintText;
@@ -10,6 +11,20 @@ class AppTextFormField extends StatelessWidget {
   final String? Function(String?)? validator;
   final bool obscureText;
   final bool enabled;
+  final TextInputType? keyboardType;
+  final int? minLines;
+  final int? maxLines;
+  final bool? filled;
+  final Color? fillColor;
+  final Color borderColor;
+  final EdgeInsetsGeometry? contentPadding;
+  final Widget? suffixIcon;
+  final Widget? prefixIcon;
+  final InputBorder? focusedBorder;
+  final InputBorder? enabledBorder;
+  final TextStyle? inputTextStyle;
+  final TextStyle? hintStyle;
+  final List<TextInputFormatter>? inputFormatters;
 
   const AppTextFormField({
     this.hintText,
@@ -19,37 +34,66 @@ class AppTextFormField extends StatelessWidget {
     this.obscureText = false,
     this.enabled = true,
     super.key,
+    this.keyboardType,
+    this.minLines,
+    this.maxLines,
+    this.filled,
+    this.fillColor,
+    this.contentPadding,
+    this.suffixIcon,
+    this.prefixIcon,
+    this.borderColor = ColorsManager.fieldBorder,
+    this.focusedBorder,
+    this.enabledBorder,
+    this.inputTextStyle,
+    this.hintStyle,
+    this.inputFormatters,
   });
 
   @override
   Widget build(BuildContext context) {
+    final actualMaxLines = obscureText ? 1 : maxLines;
+
     return TextFormField(
       enabled: enabled,
       obscureText: obscureText,
       validator: validator,
       controller: controller,
-      cursorColor: ColorsManager.fieldBorderColor,
-      style: TextStyles.primaryLight12,
+      cursorColor: ColorsManager.fieldBorder,
+      style: TextStyles.primaryTextLight12,
+      keyboardType: keyboardType,
+      minLines: minLines,
+      maxLines: actualMaxLines,
       decoration: InputDecoration(
+        suffixIcon: suffixIcon,
+        prefixIcon: prefixIcon,
+        filled: filled,
+        fillColor: fillColor,
         isDense: true,
-        hintStyle: TextStyles.secondaryLight12,
+        contentPadding: contentPadding,
+        hintStyle: (hintStyle ??
+            (enabled
+                ? TextStyles.secondaryTextLight12
+                : TextStyles.primaryTextRegular14)),
         hintText: context.tr(hintText ?? ''),
         label: label == null ? null : Text(context.tr(label.toString())),
-        border: const OutlineInputBorder(
+        border: OutlineInputBorder(
           borderSide: BorderSide(
-            color: ColorsManager.fieldBorderColor,
+            color: borderColor,
           ),
         ),
-        enabledBorder: const OutlineInputBorder(
-          borderSide: BorderSide(
-            color: ColorsManager.fieldBorderColor,
-          ),
-        ),
-        focusedBorder: const OutlineInputBorder(
-          borderSide: BorderSide(
-            color: ColorsManager.fieldBorderColor,
-          ),
-        ),
+        enabledBorder: enabledBorder ??
+            OutlineInputBorder(
+              borderSide: BorderSide(
+                color: borderColor,
+              ),
+            ),
+        focusedBorder: focusedBorder ??
+            OutlineInputBorder(
+              borderSide: BorderSide(
+                color: borderColor,
+              ),
+            ),
         errorBorder: const OutlineInputBorder(
           borderSide: BorderSide(
             color: ColorsManager.red,
@@ -60,18 +104,15 @@ class AppTextFormField extends StatelessWidget {
             color: ColorsManager.red,
           ),
         ),
-        labelStyle: TextStyles.secondaryLight12,
-        floatingLabelStyle: TextStyles.secondaryLight12,
-        // prefixIcon: icon,
-        // alignLabelWithHint: true,
-        // prefix: Text(prefix),
+        disabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+            color: borderColor,
+          ),
+        ),
+        labelStyle: TextStyles.secondaryTextLight12,
+        floatingLabelStyle: TextStyles.secondaryTextLight12,
       ),
-      // inputFormatters: inputformatter,
-      // onSaved: onsaved,
-      // onChanged: onchanged,
-      // maxLines: maxlines,
-      // keyboardType: keyboardtype,
-      // focusNode: foucsNode,
+      inputFormatters: inputFormatters,
     );
   }
 }

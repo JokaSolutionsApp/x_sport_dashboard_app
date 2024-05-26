@@ -1,8 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:x_sport_dashboard_app/core/theming/colors.dart';
-import 'package:x_sport_dashboard_app/core/theming/styles.dart';
+import 'package:x_sport_dashboard_app/core/helpers/spacing.dart';
+import 'package:x_sport_dashboard_app/core/utils/constants/colors.dart';
+import 'package:x_sport_dashboard_app/core/utils/constants/styles.dart';
 
 import '../../../core/utils/assets_managers/assets.gen.dart';
 
@@ -30,12 +31,12 @@ class AppOutlinedButton extends StatelessWidget {
       style: OutlinedButton.styleFrom(
         padding: const EdgeInsets.all(10),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(5.r),
         ),
         side: const BorderSide(
-          color: ColorsManager.fieldBorderColor,
+          color: ColorsManager.fieldBorder,
         ),
-        textStyle: TextStyles.primaryLight14,
+        textStyle: TextStyles.primaryTextLight14,
       ),
       child: Row(
         children: [
@@ -43,15 +44,13 @@ class AppOutlinedButton extends StatelessWidget {
             height: iconHeight?.h,
             width: iconWidth?.w,
           ),
-          SizedBox(
-            width: 9.w,
-          ),
+          horizontalSpace(9),
           Text(
             context.tr(
               text,
               args: [args ?? ''],
             ),
-            style: TextStyles.primaryLight14,
+            style: TextStyles.primaryTextLight14,
           ),
         ],
       ),

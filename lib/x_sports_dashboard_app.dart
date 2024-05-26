@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:x_sport_dashboard_app/core/routing/app_router.dart';
 import 'package:x_sport_dashboard_app/core/routing/routes.dart';
-import 'package:x_sport_dashboard_app/core/theming/colors.dart';
+import 'package:x_sport_dashboard_app/core/utils/constants/colors.dart';
 
 class XSportsDashboardApp extends StatelessWidget {
   final AppRouter appRouter;
@@ -31,14 +31,16 @@ class XSportsDashboardApp extends StatelessWidget {
         localizationsDelegates: context.localizationDelegates,
         supportedLocales: context.supportedLocales,
         locale: context.locale,
-        title: 'Doc App',
+        title: 'X Sports Dahsboard App',
         theme: ThemeData(
-          primaryColor: ColorsManager.primaryColor,
-          scaffoldBackgroundColor: ColorsManager.scaffoldBackgroundColor,
-          // colorScheme: ColorScheme.fromSeed(
-          //   brightness: Brightness.dark,
-          //   seedColor: const Color.fromARGB(255, 131, 57, 0),
-          // ),
+          primaryColor: ColorsManager.primary,
+          scaffoldBackgroundColor: ColorsManager.scaffoldBackground,
+          colorScheme: ColorScheme.fromSeed(
+            brightness: Brightness.light,
+            seedColor: ColorsManager.primary,
+            surface: ColorsManager.white,
+            surfaceTint: ColorsManager.white,
+          ),
         ),
         // darkTheme: ThemeData.dark().copyWith(
         //   colorScheme: kDarkColorScheme,
@@ -86,6 +88,7 @@ class XSportsDashboardApp extends StatelessWidget {
 
         debugShowCheckedModeBanner: false,
         initialRoute: Routes.signinScreen,
+        // initialRoute: Routes.navigationScreen,
         onGenerateRoute: appRouter.generateRoute,
       ),
     );

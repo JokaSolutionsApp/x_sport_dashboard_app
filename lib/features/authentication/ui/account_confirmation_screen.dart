@@ -4,10 +4,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:x_sport_dashboard_app/core/helpers/extensions.dart';
 import 'package:x_sport_dashboard_app/core/helpers/spacing.dart';
 import 'package:x_sport_dashboard_app/core/routing/routes.dart';
-import 'package:x_sport_dashboard_app/core/theming/styles.dart';
+import 'package:x_sport_dashboard_app/core/utils/constants/styles.dart';
 import 'package:x_sport_dashboard_app/core/widgets/app_text_button.dart';
 import 'package:x_sport_dashboard_app/core/widgets/app_text_form_field.dart';
-import 'package:x_sport_dashboard_app/features/authentication/ui/widgets/authentication_header.dart';
+import 'package:x_sport_dashboard_app/core/widgets/logo_translation_header.dart';
 import 'package:x_sport_dashboard_app/features/authentication/ui/widgets/underlined_text.dart';
 
 class AccountConfirmationScreen extends StatelessWidget {
@@ -23,15 +23,10 @@ class AccountConfirmationScreen extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 35.w),
             child: Column(
               children: [
-                const SizedBox(
-                  height: 36,
-                ),
-                verticalSpace(36),
-                const AuthenticationHeader(),
-                verticalSpace(13),
+                const LogoTranslationHeader(),
                 Text(
                   context.tr('account_confirmation'),
-                  style: TextStyles.priamryRegular22,
+                  style: TextStyles.priamryTextRegular22,
                 ),
                 verticalSpace(57),
                 const AppTextFormField(
