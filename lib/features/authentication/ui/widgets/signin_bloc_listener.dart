@@ -17,7 +17,6 @@ class SigninBlocListener extends StatelessWidget {
       listenWhen: (previous, current) =>
           current is Loading || current is Success || current is Error,
       listener: (context, state) {
-        print(state);
         state.whenOrNull(
           loading: () {
             showDialog(

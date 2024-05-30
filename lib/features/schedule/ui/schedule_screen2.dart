@@ -329,7 +329,7 @@ class _ScheduleScreen2State extends State<ScheduleScreen2> {
   }
 }
 
-_AppointmentDataSource _getCalendarDataSource() {
+AppointmentDataSource getCalendarDataSource() {
   List<Appointment> appointments = <Appointment>[];
   appointments.add(
     Appointment(
@@ -352,11 +352,11 @@ _AppointmentDataSource _getCalendarDataSource() {
     ),
   );
 
-  return _AppointmentDataSource(appointments);
+  return AppointmentDataSource(appointments);
 }
 
-class _AppointmentDataSource extends CalendarDataSource {
-  _AppointmentDataSource(List<Appointment> source) {
+class AppointmentDataSource extends CalendarDataSource {
+  AppointmentDataSource(List<Appointment> source) {
     appointments = source;
   }
 }
